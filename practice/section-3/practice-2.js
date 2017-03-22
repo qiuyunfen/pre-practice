@@ -1,5 +1,13 @@
 'use strict';
-
+//遍历，是否存在
+//逢3剪1
 function createUpdatedCollection(collectionA, objectB) {
-  return '实现练习要求，并改写该行代码。';
+  let objectBVal = objectB.value;
+  collectionA.forEach(obj => {
+    if(objectBVal.indexOf(obj.key) != -1) {
+      let num = Math.floor(obj.count / 3);
+      obj.count -= num;
+    }
+  })
+  return collectionA;
 }

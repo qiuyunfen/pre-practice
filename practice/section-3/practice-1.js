@@ -1,5 +1,9 @@
 'use strict';
 
 function createUpdatedCollection(collectionA, objectB) {
-  return '实现练习要求，并改写该行代码。';
+  let objectBVal = objectB.value;
+  collectionA.forEach(obj => {
+    objectBVal.indexOf(obj.key) != -1 && obj.count--;
+  })
+  return collectionA;
 }

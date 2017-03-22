@@ -1,5 +1,7 @@
 'use strict';
-
+//字符串分割
+//统计次数
+//返回
 function countSameElements(collection) {
   let resultlist = [];
   collection.forEach(item => {
